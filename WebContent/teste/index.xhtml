@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Astoria</title>
+	<h:outputStylesheet library="css" name="main.css" />
+</h:head>
+<h:body>
+<!--======================== Cabeçalho -->
+	<p:layout fullPage="true">
+		<p:layoutUnit class="conteudo" position="north" id="header">
+			<div class="ui-grid ui-grid-responsive">
+				<div class="ui-grid-row">
+	<!-- Lado Esquerdo -->
+					<div class="ui-grid-col-5">
+						<IMG class="logo" alt="Logo Astoria"
+							src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" />
+						<h1>Sistema de Loja Astoria</h1>
+					</div>
+	<!-- Lado Direito -->
+					<div class="ui-grid-col-7">
+
+						<h:form id="form">
+							<p:growl id="messages" />
+							<p:menubar>
+								<p:menuitem value="Venda" />
+								<p:menuitem value="Mesa"  />
+								<p:menuitem value="Comanda" />
+								<p:menuitem value="Caixa"/>
+								<p:menuitem value="Menu" url="http://www.primefaces.org"/>
+							</p:menubar>
+						</h:form>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+		</p:layoutUnit>
+		
+<!-- ==========================  Corpo -->
+	<!-- +++++++++++++Lado Esquerdo -->
+		<p:layoutUnit class="conteudo" position="center" header="Grupos de Produtos">
+			Grupos de Produtos
+		</p:layoutUnit>
+	<!-- +++++++++++++ Fim Esquerdo -->
+	
+	<!-- +++++++++++++ Lado Direito -->
+		<p:layoutUnit class="conteudo" position="east" resizable="true"
+			size="600" header="Venda" collapsible="true">
+			<h:outputText value="Right unit content." />
+		        COmpras
+		    </p:layoutUnit>
+	<!-- +++++++++++++ Fim Esquerdo -->
+<!-- ==========================FIM  Corpo -->	
+
+	<!-- ==========================  Rodape -->
+	<p:layoutUnit class="conteudo footer" position="south" >
+			<h:outputText value="Copyright 2016 Astoria All rights reserved."/>
+		        
+		    </p:layoutUnit>
+<!-- ==========================FIM  Rodape -->  
+
+	</p:layout>
+
+	
+	
+</h:body>
+</html>
